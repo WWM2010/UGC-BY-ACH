@@ -1,6 +1,7 @@
 # 📸 UGC by ACH | Faceless Content Creator Portfolio
 
-![UGC by ACH Logo](https://your-image-link-here.com/logo.jpg) 
+![UGC by ACH Logo](<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/04342630-effe-4f6b-8a1c-75146aa8bdb4" />
+) 
 
 > **Authentic. Aesthetic. Faceless.** > High-converting User Generated Content (UGC) specifically designed for female-centric brands in self-care, home organization, and lifestyle.
 
@@ -36,14 +37,20 @@
 ---
 
 ## 📱 Connect with ACH
-| Platform | Link |
-| :--- | :--- |
-| **Instagram** | [Link Here] |
-| **TikTok** | [Link Here] |
-| **WhatsApp** | [Inquiry Link] |
-| **Email** | [Email Address] |
+| Platform|
+|####|
+| **Instagram** | [https://www.instagram.com/ugc.by.ach?igsh=cGtkZHFiY2N0dmJv] |
+| **TikTok** | [https://www.tiktok.com/@ugc.by.ach?_r=1&_t=ZS-93zYxlCy21F] |
+| **WhatsApp** | [+212635801455] |
+| **Email** | [ugcbyach@gmail.com] |
 
 ---
 
 ## 📄 License
-This portfolio and all content created within are the property of **UGC by ACH**.
+## ⚖️ License
+
+This project is licensed under the **MIT License**. 
+
+Copyright (c) 2026 **UGC by ACH**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files... [See LICENSE file for full text]
