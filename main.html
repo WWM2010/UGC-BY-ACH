@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UGC by ACH | Faceless Content Creator</title>
+
+    <!-- UI Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- App Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Minor browser polish -->
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
+  </head>
+
+  <body class="h-full font-sans gradient-bg text-[#2C2C2C]">
+    <div class="h-full w-full overflow-auto">
+      <!-- ========================================= -->
+      <!-- Navigation -->
+      <!-- ========================================= -->
+      <nav
+        class="fixed top-0 left-0 right-0 z-50 bg-[#F5F0EB]/90 backdrop-blur-md border-b border-[#D4C5B5]/30"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16 sm:h-20">
+            <a href="#hero" class="flex items-center gap-2">
+              <img
+                src="UGC BY ACH.png"
+                alt="UGC by ACH"
+                class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-[#D4C5B5]"
+              />
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+              <a href="#portfolio" class="nav-link text-sm tracking-wide"
+                >Portfolio</a
+              >
+              <a href="#services" class="nav-link text-sm tracking-wide"
+                >Services</a
+              >
+              <a href="#about" class="nav-link text-sm tracking-wide">About</a>
+              <a
+                href="#contact"
+                class="px-5 py-2.5 bg-[#2C2C2C] text-white text-sm tracking-wide rounded-full hover:bg-[#8B7355] transition-colors cta-pulse"
+              >
+                Work With Me
+              </a>
+            </div>
+
+            <button id="mobileMenuBtn" class="md:hidden p-2">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobileMenu"
+          class="hidden md:hidden bg-[#F5F0EB] border-t border-[#D4C5B5]/30"
+        >
+          <div class="px-4 py-4 space-y-3">
+            <a href="#portfolio" class="block py-2 text-sm">Portfolio</a>
+            <a href="#services" class="block py-2 text-sm">Services</a>
+            <a href="#about" class="block py-2 text-sm">About</a>
+            <a
+              href="#contact"
+              class="block py-3 text-center bg-[#2C2C2C] text-white text-sm rounded-full"
+              >Work With Me</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- ========================================= -->
+      <!-- Hero Section -->
+      <!-- ========================================= -->
+      <section id="hero" class="min-h-[90%] flex items-center pt-20 sm:pt-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="fade-in">
+              <p class="text-[#8B7355] text-sm tracking-[0.2em] uppercase mb-4">
+                Faceless UGC Creator
+              </p>
+              <h1
+                id="heroHeadline"
+                class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-6"
+              >
+                Authentic. Aesthetic. Faceless.
+              </h1>
+              <p
+                id="heroSubheadline"
+                class="text-lg sm:text-xl text-[#2C2C2C]/70 leading-relaxed mb-8 max-w-lg"
+              >
+                High-converting UGC content for brands who let the product be
+                the star.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="#contact"
+                  class="px-8 py-4 bg-[#2C2C2C] text-white text-center rounded-full hover:bg-[#8B7355] transition-all duration-300 tracking-wide cta-pulse"
+                >
+                  Request a Quote
+                </a>
+                <a
+                  href="#portfolio"
+                  class="px-8 py-4 border border-[#2C2C2C] text-center rounded-full hover:bg-[#2C2C2C] hover:text-white transition-all duration-300 tracking-wide"
+                >
+                  View Portfolio
+                </a>
+              </div>
+            </div>
+
+            <div class="fade-in stagger-2 relative">
+              <div class="iphone-mockup">
+                <div class="iphone-screen flex items-center justify-center">
+                  <video
+                    class="w-full h-full object-cover"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="UGC BY ACH.png"
+                  >
+                    <source src="main.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div
+                class="absolute -bottom-6 -left-6 w-32 h-32 bg-[#E8DFD4] rounded-2xl -z-10"
+              ></div>
+              <div
+                class="absolute -top-6 -right-6 w-24 h-24 bg-[#D4C5B5]/50 rounded-full -z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- Portfolio Section -->
+      <!-- ========================================= -->
+      <section id="portfolio" class="py-20 sm:py-28 bg-white/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <p class="text-[#8B7355] text-sm tracking-[0.2em] uppercase mb-3">
+              Portfolio
+            </p>
+            <h2
+              class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold"
+            >
+              Recent Work
+            </h2>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Portfolio Item 1 -->
+            <div
+              class="card-hover rounded-2xl overflow-hidden bg-white shadow-sm fade-in stagger-3"
+            >
+              <div class="iphone-mockup">
+                <div class="iphone-screen flex items-center justify-center">
+                  <video
+                    class="w-full h-full object-cover"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="UGC BY ACH.png"
+                  >
+                    <source src="vid1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div class="p-5">
+                <h3 class="font-serif text-lg font-medium mb-1">Sun-Screen</h3>
+                <p class="text-sm text-[#2C2C2C]/60">
+                  White Cream for Your Skin
+                </p>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div
+              class="card-hover rounded-2xl overflow-hidden bg-white shadow-sm fade-in stagger-4"
+            >
+              <div class="iphone-mockup">
+                <div class="iphone-screen flex items-center justify-center">
+                  <video
+                    class="w-full h-full object-cover"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="UGC BY ACH.png"
+                  >
+                    <source src="vid3.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div class="p-5">
+                <h3 class="font-serif text-lg font-medium mb-1">
+                  Women's bag GUESS
+                </h3>
+                <p class="text-sm text-[#2C2C2C]/60">
+                  First impressions content
+                </p>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div
+              class="card-hover rounded-2xl overflow-hidden bg-white shadow-sm fade-in stagger-5"
+            >
+              <div class="iphone-mockup">
+                <div class="iphone-screen flex items-center justify-center">
+                  <video
+                    class="w-full h-full object-cover"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="UGC BY ACH.png"
+                  >
+                    <source src="vidmain.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div class="p-5">
+                <h3 class="font-serif text-lg font-medium mb-1">
+                  Skin-care product
+                </h3>
+                <p class="text-sm text-[#2C2C2C]/60">
+                  Aesthetic product showcase
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- Why Faceless Section -->
+      <!-- ========================================= -->
+      <section class="py-20 sm:py-28">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <p class="text-[#8B7355] text-sm tracking-[0.2em] uppercase mb-3">
+                The Faceless Advantage
+              </p>
+              <h2
+                class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6"
+              >
+                Why Faceless Content Works
+              </h2>
+              <p class="text-lg text-[#2C2C2C]/70 leading-relaxed mb-8">
+                In a world of influencer fatigue, faceless content cuts through
+                the noise. Your product becomes the hero—not a personality.
+              </p>
+
+              <div class="space-y-6">
+                <div class="flex gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-[#E8DFD4] rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5 text-[#8B7355]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-medium mb-1">100% Product Focus</h3>
+                    <p class="text-sm text-[#2C2C2C]/60">
+                      Every frame showcases your product, not a creator's face
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-[#E8DFD4] rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5 text-[#8B7355]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-medium mb-1">Universal Relatability</h3>
+                    <p class="text-sm text-[#2C2C2C]/60">
+                      Viewers project themselves into the content
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-[#E8DFD4] rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5 text-[#8B7355]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-medium mb-1">Respects Modest Values</h3>
+                    <p class="text-sm text-[#2C2C2C]/60">
+                      Professional content that aligns with personal boundaries
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="aspect-square rounded-2xl bg-[#E8DFD4] flex items-center justify-center"
+                >
+                  <svg
+                    class="w-16 h-16 text-[#8B7355]/50"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                      d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="aspect-square rounded-2xl bg-[#D4C5B5] flex items-center justify-center mt-8"
+                >
+                  <svg
+                    class="w-16 h-16 text-[#8B7355]/50"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- Services Section -->
+      <!-- ========================================= -->
+      <section id="services" class="py-20 sm:py-28 bg-[#2C2C2C] text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <p class="text-[#D4C5B5] text-sm tracking-[0.2em] uppercase mb-3">
+              Services
+            </p>
+            <h2
+              class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold"
+            >
+              What I Create
+            </h2>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-[#8B7355]/50 transition-colors"
+            >
+              <div
+                class="w-14 h-14 bg-[#8B7355]/20 rounded-xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-7 h-7 text-[#D4C5B5]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-serif text-xl font-medium mb-2">
+                Aesthetic Product Demos
+              </h3>
+              <p class="text-white/60 text-sm leading-relaxed">
+                Beautifully shot product demonstrations that highlight features
+                and benefits
+              </p>
+            </div>
+
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-[#8B7355]/50 transition-colors"
+            >
+              <div
+                class="w-14 h-14 bg-[#8B7355]/20 rounded-xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-7 h-7 text-[#D4C5B5]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-serif text-xl font-medium mb-2">
+                ASMR Home Content
+              </h3>
+              <p class="text-white/60 text-sm leading-relaxed">
+                Satisfying cleaning and organization videos that captivate
+                audiences
+              </p>
+            </div>
+
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-[#8B7355]/50 transition-colors"
+            >
+              <div
+                class="w-14 h-14 bg-[#8B7355]/20 rounded-xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-7 h-7 text-[#D4C5B5]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-serif text-xl font-medium mb-2">
+                Lifestyle Photography
+              </h3>
+              <p class="text-white/60 text-sm leading-relaxed">
+                Sun-drenched, editorial-style photos for social media and ads
+              </p>
+            </div>
+
+            <div
+              class="bg-white/5 backdrop-blur rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-[#8B7355]/50 transition-colors"
+            >
+              <div
+                class="w-14 h-14 bg-[#8B7355]/20 rounded-xl flex items-center justify-center mb-5"
+              >
+                <svg
+                  class="w-7 h-7 text-[#D4C5B5]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-serif text-xl font-medium mb-2">
+                Voiceover Reviews
+              </h3>
+              <p class="text-white/60 text-sm leading-relaxed">
+                Thoughtful product reviews with professional voice narration
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- Pricing Section -->
+      <!-- ========================================= -->
+      <section class="py-20 sm:py-28">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p class="text-[#8B7355] text-sm tracking-[0.2em] uppercase mb-3">
+            Investment
+          </p>
+          <h2
+            class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6"
+          >
+            Custom Quotes Only
+          </h2>
+          <p
+            class="text-lg text-[#2C2C2C]/70 leading-relaxed mb-8 max-w-2xl mx-auto"
+          >
+            Every project is unique. Pricing is tailored to project complexity,
+            production quality, and usage rights.
+          </p>
+
+          <div
+            class="bg-white rounded-2xl p-8 sm:p-12 shadow-sm border border-[#D4C5B5]/30"
+          >
+            <div class="grid sm:grid-cols-3 gap-8 sm:gap-12 text-left">
+              <div>
+                <h3 class="font-serif text-lg font-medium mb-2">
+                  Project Scope
+                </h3>
+                <p class="text-sm text-[#2C2C2C]/60">
+                  Number of videos, photos, and deliverables needed
+                </p>
+              </div>
+              <div>
+                <h3 class="font-serif text-lg font-medium mb-2">
+                  Production Quality
+                </h3>
+                <p class="text-sm text-[#2C2C2C]/60">
+                  <strong>Rates vary by production quality</strong> and
+                  complexity required
+                </p>
+              </div>
+              <div>
+                <h3 class="font-serif text-lg font-medium mb-2">
+                  Usage Rights
+                </h3>
+                <p class="text-sm text-[#2C2C2C]/60">
+                  Organic use, paid ads, or full ownership transfer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- About Section -->
+      <!-- ========================================= -->
+      <section id="about" class="py-20 sm:py-28 bg-white/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div class="order-2 lg:order-1">
+              <p class="text-[#8B7355] text-sm tracking-[0.2em] uppercase mb-3">
+                About
+              </p>
+              <h2
+                id="aboutTitle"
+                class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 reveal-on-scroll"
+              >
+                Meet ACH
+              </h2>
+              <p
+                id="aboutDescription"
+                class="text-lg text-[#2C2C2C]/70 leading-relaxed mb-6 reveal-on-scroll"
+              >
+                A Muslim creator with an eye for detail and a passion for clean,
+                organized living. I believe that beautiful content doesn't
+                require showing your face—it requires intention, aesthetics, and
+                understanding what makes products shine.
+              </p>
+              <p class="text-lg text-[#2C2C2C]/70 leading-relaxed mb-8">
+                Specializing in self-care, home organization, and lifestyle
+                niches, I create content that resonates with audiences who
+                appreciate quality, calm aesthetics, and authentic product
+                storytelling.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="px-4 py-2 bg-[#E8DFD4] rounded-full text-sm skill-tag reveal-on-scroll"
+                  >Self-Care</span
+                >
+                <span
+                  class="px-4 py-2 bg-[#E8DFD4] rounded-full text-sm skill-tag reveal-on-scroll"
+                  >Home Organization</span
+                >
+                <span
+                  class="px-4 py-2 bg-[#E8DFD4] rounded-full text-sm skill-tag reveal-on-scroll"
+                  >Lifestyle</span
+                >
+                <span
+                  class="px-4 py-2 bg-[#E8DFD4] rounded-full text-sm skill-tag reveal-on-scroll"
+                  >ASMR</span
+                >
+              </div>
+            </div>
+
+            <div class="order-1 lg:order-2 relative">
+              <div
+                class="aspect-[4/5] rounded-3xl bg-[#E8DFD4] flex items-center justify-center overflow-hidden about-image tilt-on-hover reveal-on-scroll"
+              >
+                <div class="text-center p-8">
+                  <div
+                    class="w-32 h-32 mx-auto mb-6 rounded-full bg-[#D4C5B5] flex items-center justify-center overflow-hidden"
+                  >
+                    <img
+                      src="UGC BY ACH.png"
+                      alt="UGC by ACH"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <p class="font-serif text-xl text-[#8B7355]">ACH</p>
+                  <p class="text-sm text-[#8B7355]/70">Faceless UGC Creator</p>
+                </div>
+              </div>
+              <div
+                class="absolute -bottom-4 -right-4 w-40 h-40 bg-[#D4C5B5]/50 rounded-full -z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- Contact Section -->
+      <!-- ========================================= -->
+      <section id="contact" class="py-20 sm:py-28">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <p class="text-[#8B7355] text-sm tracking-[0.2em] uppercase mb-3">
+              Get Started
+            </p>
+            <h2
+              class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4"
+            >
+              Let's Create Together
+            </h2>
+            <p class="text-lg text-[#2C2C2C]/70">
+              Ready to elevate your brand with authentic, aesthetic content?
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-[#D4C5B5]/30"
+          >
+            <p class="text-center text-lg text-[#2C2C2C]/70 mb-10">
+              Connect with me on social media to see my latest work and reach
+              out
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-6 sm:gap-10">
+              <a
+                href="https://www.instagram.com/ugc.by.ach?igsh=cGtkZHFiY2N0dmJv"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center gap-3 p-6 sm:p-8 rounded-2xl bg-[#F5F0EB] hover:bg-[#E8DFD4] transition-all group social-chip"
+              >
+                <div
+                  class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-[#F58529] via-[#DD2A7B] to-[#833AB4] flex items-center justify-center group-hover:scale-110 transition-transform instagram-badge"
+                >
+                  <svg
+                    class="w-8 h-8 sm:w-10 sm:h-10 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-center">
+                  <p class="font-medium text-[#2C2C2C]">Instagram</p>
+                  <p class="text-xs text-[#2C2C2C]/60">@ugc.by.ach</p>
+                </div>
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@ugc.by.ach?_r=1&_t=ZS-93zYxlCy21F"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center gap-3 p-6 sm:p-8 rounded-2xl bg-[#F5F0EB] hover:bg-[#E8DFD4] transition-all group social-chip"
+              >
+                <div
+                  class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-black flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <svg
+                    class="w-8 h-8 sm:w-10 sm:h-10 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-center">
+                  <p class="font-medium text-[#2C2C2C]">TikTok</p>
+                  <p class="text-xs text-[#2C2C2C]/60">@ugc.by.ach</p>
+                </div>
+              </a>
+
+              <a
+                href="https://wa.me/+212635801455"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center gap-3 p-6 sm:p-8 rounded-2xl bg-[#F5F0EB] hover:bg-[#E8DFD4] transition-all group social-chip"
+              >
+                <div
+                  class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#25D366] flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <svg
+                    class="w-8 h-8 sm:w-10 sm:h-10 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20.52 3.48A11.8 11.8 0 0012.04 0C5.73.02.74 5.02.76 11.32A11.3 11.3 0 002.6 17L0 24l7.18-2.57a11.85 11.85 0 004.86 1.04h.01c6.31-.02 11.3-5.02 11.32-11.32a11.26 11.26 0 00-3.85-8.67zM12.05 21.2h-.01a9.7 9.7 0 01-4.95-1.36l-.36-.21-4.26 1.52 1.52-4.15-.24-.43A9.73 9.73 0 012.33 11.3C2.32 6.37 6.4 2.28 11.34 2.26h.7a9.7 9.7 0 016.86 2.86 9.67 9.67 0 012.84 6.9c-.02 5.34-4.37 9.66-9.69 9.68zm5.34-7.25c-.29-.15-1.7-.84-1.96-.93-.26-.1-.45-.15-.65.15-.19.29-.75.93-.92 1.12-.17.19-.34.2-.63.05-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.14-.14.29-.34.44-.51.15-.17.2-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.55-.47-.48-.65-.49h-.56c-.19 0-.51.07-.78.36-.26.29-1.01.98-1.01 2.38 0 1.4 1.03 2.75 1.18 2.94.15.19 2.03 3.1 4.92 4.35.69.3 1.23.47 1.65.6.69.22 1.32.19 1.82.12.55-.08 1.7-.69 1.94-1.35.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.54-.34z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-center">
+                  <p class="font-medium text-[#2C2C2C]">WhatsApp</p>
+                  <p class="text-xs text-[#2C2C2C]/60">Chat with me</p>
+                </div>
+              </a>
+
+              <a
+                href="mailto:ugcbyach@gmail.com"
+                class="flex flex-col items-center gap-3 p-6 sm:p-8 rounded-2xl bg-[#F5F0EB] hover:bg-[#E8DFD4] transition-all group social-chip"
+              >
+                <div
+                  class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#8B7355] flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <svg
+                    class="w-8 h-8 sm:w-10 sm:h-10 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-center">
+                  <p class="font-medium text-[#2C2C2C]">Email</p>
+                  <p class="text-xs text-[#2C2C2C]/60">ugcbyach@gmail.com</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- Footer -->
+      <!-- ========================================= -->
+      <footer class="py-12 bg-[#2C2C2C] text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col sm:flex-row items-center justify-between gap-6"
+          >
+            <div class="text-center sm:text-left">
+              <p class="font-serif text-xl mb-1">UGC by ACH</p>
+              <p class="text-white/60 text-sm">
+                Faceless Content, Authentic Results
+              </p>
+            </div>
+            <div class="flex gap-6">
+              <a
+                href="https://www.instagram.com/ugc.by.ach?igsh=cGtkZHFiY2N0dmJv"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white/60 hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.tiktok.com/@ugc.by.ach?_r=1&_t=ZS-93zYxlCy21F"
+                class="text-white/60 hover:text-white transition-colors"
+                aria-label="TikTok"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"
+                  />
+                </svg> </a
+              ><a
+                href="mailto:ugcbyach@gmail.com"
+                class="text-white/60 hover:text-white transition-colors"
+                aria-label="Email"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="mt-8 pt-8 border-t border-white/10 text-center">
+            <p class="text-white/40 text-sm">
+              © 2024 UGC by ACH. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- App Scripts -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
