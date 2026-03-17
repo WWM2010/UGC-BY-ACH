@@ -38,7 +38,7 @@
 
 ## 📱 Connect with ACH
 | Platform|
-|[https://wwm2010.github.io/UGC-BY-ACH/main.html]|
+|[https://wwm2010.github.io/UGC-BY-ACH/main.html/]|
 
 | **Instagram** | [https://www.instagram.com/ugc.by.ach?igsh=cGtkZHFiY2N0dmJv] |
 
